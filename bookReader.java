@@ -19,7 +19,7 @@ public class bookReader
 			try
 			{
             
-				System.out.print("Enter file faggot:");
+				System.out.print("Enter file :");
 				String userInputFile = in.nextLine();
 				HashSet<String> newHash = new HashSet<String>();
 				newHash = readFile(userInputFile);
@@ -30,11 +30,11 @@ public class bookReader
 			}
 			catch(FileNotFoundException exception)
 			{
-				System.out.println("File not found faggot" + new File(".").getAbsoluteFile());
+				System.out.println("File not found " + new File(".").getAbsoluteFile());
 			}
 			catch(NoSuchElementException exception)
 			{
-				System.out.println("File contents invalid faggot");
+				System.out.println("File contents invalid ");
 			}
 			catch(IOException exception)
 			{
@@ -64,14 +64,14 @@ public class bookReader
 		return fileLines;
 	}
 	//This inserts the term Jizz after every occurrence of the word the
-	public static void insertJizz(String filename, HashSet<String> fileLines)
+	public static void insertJazz(String filename, HashSet<String> fileLines)
 	{
 		try
 		{
 			PrintWriter out = new PrintWriter(filename);
 			if(fileLines.contains("Attention"))
 			{
-				fileLines.add("Jizz");
+				fileLines.add("Jazz");
 				
 			}
 			out.close();
